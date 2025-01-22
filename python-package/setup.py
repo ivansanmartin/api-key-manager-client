@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="api_key_manager_client",
+    name="api-key-manager-client",
     version="1.0.0",
     packages=find_packages(),
     install_requires=[],
