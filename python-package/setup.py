@@ -4,7 +4,9 @@ setup(
     name="api-key-manager-client",
     version="1.0.0",
     packages=find_packages(),
-    install_requires=[],
+    install_requires=[
+        "requests>=2.31.0",
+    ],
     author="Iván San Martín",
     author_email="ivansanmartin987@gmail.com",
     description="A simple package for api-key-manager",
