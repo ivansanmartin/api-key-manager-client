@@ -12,6 +12,6 @@ class ApiKeyManagerClient:
                                     "api_key": api_key
                                  }
                                 )
-        print(response)
+        print(response.json())
     
     
