@@ -5,11 +5,12 @@ class ApiKeyManagerClient:
         self.api_url = api_url    
         self.version = version
     
-    def verify_api_key(self, api_key: str):
+    def verify_api_key(self, api_key: str, api_reference_id: str):
         try:
             response = requests.post(
                 f'{self.api_url}/api/{self.version}/api-key-manager/verify-key',
                 json={
+                    "api_reference_id": api_reference_id,
                     "api_key": api_key
                 }
             )
